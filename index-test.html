@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="style-test.css">
+    <title>Survey</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Survey</h1>
+            <p id="description">Thank you for taking the time to answer the following survery form.</p>
+        </header>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label class="form-label" id="name-label" for="name">Name</label>
+                <input 
+                type="text"
+                name="name" 
+                id="name"
+                class="form-control"
+                placeholder="Enter name here..."
+                required
+                >
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" id="email-label" for="email">Email</label>
+                <input 
+                type="email"
+                name="email" 
+                id="email"
+                class="form-control"
+                placeholder="Enter email here..."
+                required
+                >
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" id="number-label" for="age">Age</label>
+                <input 
+                type="number"
+                name="age" 
+                id="age"
+                class="form-control"
+                placeholder="Enter age here..."
+                min="16"
+                max="99"
+                required
+                >
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="person">Please enter your personality type</label>
+                <select name="person" class="form-control" id="dropdown">
+                    <option disabled selected value>Select personality</option>
+                    <option value="intj">INTJ</option>
+                    <option value="intj">INTP</option>
+                    <option value="intj">ENTJ</option>
+                    <option value="intj">ENTP</option>
+                    <option value="intj">INFJ</option>
+                    <option value="intj">INFP</option>
+                    <option value="intj">ENFJ</option>
+                    <option value="intj">ENFP</option>
+                    <option value="intj">ISTJ</option>
+                    <option value="intj">ISFJ</option>
+                    <option value="intj">ESTJ</option>
+                    <option value="intj">ESFJ</option>
+                    <option value="intj">ISTP</option>
+                    <option value="intj">ISFP</option>
+                    <option value="intj">ESTP</option>
+                    <option value="intj">ESFP</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p class="form-label">Please select your dietry requirement <hr> </p>
+                <label class="radio-choice">
+                    <input 
+                    type="radio"
+                    name="diet" 
+                    id="vegan"
+                    value="diet"
+                    class="input-radio"
+                    >Vegan</label>
+                <label class="radio-choice">
+                    <input 
+                    type="radio"
+                    name="diet" 
+                    id="gluten-free"
+                    value="diet"
+                    class="input-radio"
+                    >Gluten-Free</label>
+                <label class="radio-choice">
+                    <input 
+                    type="radio"
+                    name="diet" 
+                    id="meat"
+                    value="diet"
+                    class="input-radio"
+                    checked
+                    >No Preference</label>
+            </div>
+
+
+            <div class="form-group">
+                <p class="form-label">Please list your computer skills <hr></p>
+                <label class="checkbox-choice">
+                    <input 
+                    type="checkbox"
+                    name="ms-office" 
+                    id="ms-office"
+                    class="input-checkbox"
+                    >Microsoft Office</label>
+                <label class="checkbox-choice">
+                    <input 
+                    type="checkbox"
+                    name="photoshop" 
+                    id="photoshop"
+                    class="input-checkbox"
+                    >Adobe Photoshope</label>
+                <label class="checkbox-choice">
+                    <input 
+                    type="checkbox"
+                    name="illstrator" 
+                    id="illstrator"
+                    class="input-checkbox"
+                    >Adobe Illustrator</label>
+                <label class="checkbox-choice">
+                    <input 
+                    type="checkbox"
+                    name="xd" 
+                    id="xd"
+                    class="input-checkbox"
+                    >Adobe XD</label>
+                <label class="checkbox-choice">
+                    <input 
+                    type="checkbox"
+                    name="blender" 
+                    id="blender"
+                    class="input-checkbox"
+                    >Blender</label>
+                <label class="checkbox-choice">
+                    <input 
+                    type="checkbox"
+                    name="figma" 
+                    id="figma"
+                    class="input-checkbox"
+                    >Figma</label>
+            </div>
+
+            <div class="form-group">
+                <p class="form-label" for="comments">Additional Comments</p>
+                <textarea 
+                class="form-control"
+                id="comments"
+                name="comments"
+                maxlength="240"
+                placeholder="Please enter your comments here..."
+                ></textarea> 
+            </div>
+
+            <div id="button" class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>

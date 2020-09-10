@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+:root {
+    --font: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+body::before,
+body:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90rem;
+    background-image: url(white-clouds-and-blue-sky-2569471.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: inherit;
+}
+
+.container {
+    position: absolute;
+    height:auto;
+    margin-bottom: 1rem;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    font-family: var(--font);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+header {
+    width: 100%;
+}
+
+#title {
+    text-align: center;
+    padding: .5rem;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+#description {
+    text-align: center;
+    padding: .5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+
+#survey-form {
+    background-color: rgba(33, 47, 60, 0.3);
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 10px;
+    display: grid;
+    grid-gap: 2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control {
+    width: 100%;
+    height: 2.325rem;
+    border: none;
+    border-radius: 10px;
+    padding: .525rem
+}
+
+.form-control:hover {
+    border: 1.5px solid #d7c2a7;
+    box-shadow: 2px 2px 5px 0 #d7c2a7,
+     -2px -2px 5px 0 #d7c2a7;
+}
+
+.form-control:focus {
+    border: 1.5px solid #d7c2a7;
+    box-shadow: 2px 2px 5px 0 #d7c2a7,
+     -2px -2px 5px 0 #d7c2a7;
+     outline: none;
+}
+
+
+.form-label {
+    font-size: 1.125rem;
+    margin-bottom: .800rem;
+    font-weight: 600;
+    color: rgb(230, 222, 222);
+}
+
+.input-radio {
+    border: none;
+    width: 1.125em;
+    height: 1.125em;
+    margin-right: .750rem;
+}
+
+.radio-choice {
+    padding: 5px 0 5px 0;
+    margin-top: 10px;
+    font-size: 1.125rem;
+}
+
+.input-checkbox {
+    border: none;
+    width: 1.125em;
+    height: 1.125em;
+    margin-right: .750rem;
+}
+
+.checkbox-choice {
+    padding: 5px 0 5px 0;
+    margin-top: 10px;
+    font-size: 1.125rem;
+}
+
+#comments {
+    height: 8rem;
+    resize: none;
+}
+
+button {
+    width: 100%;
+    height: 3rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding-right: 5px 0 5px 0;
+}
+
+button:hover {
+    border: 1.5px solid #d7c2a7;
+    box-shadow: 2px 2px 5px 0 #d7c2a7,
+     -2px -2px 5px 0 #d7c2a7;
+     border: none;
+}
+
+button:focus {
+    border: none;
+} 
+
+
+@media screen and (max-width: 670px) {
+    body {
+        height: 92rem;
+    }
+
+    .container {
+        width: 90%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    body {
+        height: 98rem;
+    }
+
+    .container {
+        width: 90%;
+        height: 100%;
+    }
+}
+
+
+
